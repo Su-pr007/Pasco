@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 1400px){
+	.grid{
+		width: 80vw;
+	}
+	.bottom-header{
+		grid-template-columns: 10vw 1fr 10vw;
+	}
+	.sort-block{
+		height: 40px;
+		width: 80%;
+	}
+	.main-slider_left, .main-slider_right{
+		width: 8vw;
+	}
+	.main-blog-flex h2{
+		margin-top: 10%;
+	}
+}
+@media screen and (max-width: 1250px){
+	.grid{
+		width: 90vw;
+	}
+	.bottom-header{
+		grid-template-columns: 5vw 1fr 5vw;
+	}
+}
+@media screen and (max-width: 1110px){
+	.grid{
+		width: 100vw;
+	}
+}

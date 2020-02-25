@@ -4,73 +4,649 @@
 	<meta charset="UTF-8">
 	<title>Pasco</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src='js/jquery-3.1.1.min.js'></script>
-	<script src='js/jquery.corner.js'></script>
-	<script src='js/script.js'></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-	<header class='main-header'>
-		<div class='top-header grid'>
-			<div class="header-share">
-				<!-- social links here -->
-					<img src='img/language.ico' alt='language-icon'>
-					<img src='img/language.ico' alt='language-icon'>
-					<img src='img/language.ico' alt='language-icon'>
-					<img src='img/language.ico' alt='language-icon'>
-					<img src='img/language.ico' alt='language-icon'>
-					<img src='img/language.ico' alt='language-icon'>
-			</div>
-			<div class="header-login-lang">
-				<!-- login -->
-				<a href="#">
-					<img src="img/account_circle.ico" alt="account-icon">
-				</a>
-				<span class='login-block'>
-					<a href='#'>SIGN IN</a>
-				</span>
-				<!-- language -->
-				<div class='lang-block'>
-					<img src='img/language.ico' alt='language-icon'>
-					<span class='language-text'>
-						<a href='#'>
-					ENG
-						<img src="img/arrow_down.ico" alt="arrow-down">
+	<header class="main-header">
+
+		<div class="top-header">
+			<div class="top-header-container grid">
+				<div class="social-links">
+					<!-- social links here -->
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+					<a href="#" class="fa fa-vk"></a>
+					<a href="#" class="fa fa-google-plus"></a>
+					<a href="#" class="fa fa-behance"></a>
+					<a href="#" class="fa fa-dribbble"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+				<div class="login-lang">
+					<a href="#">
+						<img src="img/account_circle.ico" alt="account-icon">
+						<span class="login-span move_up right_border">SIGN IN</span>
 					</a>
+					<span class="lang-block">
+						<img src="img/language.ico" alt="lang">
+						<span class="move_up">ENG</span>
+						<img src="img/arrow_down.ico" alt="arrow_down" class="move_up">
+						<ul class="appearable-window">
+							<a href="#"><li>ENG</li></a>
+							<a href="#"><li>RUS</li></a>
+							<a href="#"><li>UKR</li></a>
+							<a href="#"><li>Братский</li></a>
+						</ul>
 					</span>
-					<ul class='appearable-window' style="display: none;">
-						<li>RUS</li>
-						<li>ENG</li>
-						<li>UKR</li>
-						<li>Братский</li>
-					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="header-main">
-			<img src="img/main_bg.jpg" alt="main_background" class='main_bg_img'>
-			<div class="dark-filter grid">
-				<div class='header-container grid'>
-					<div class="middle-header">
-						<img src="img/logo.png" alt="logo" class='main-logo'>
-						<div class="header-menu">
-							<ul>
-								<li>HOME</li>
-								<li>PORTFOLIO</li>
-								<li>BLOG</li>
-								<li>PAGES</li>
-								<li>SHOP</li>
-								<li>COMPONENTS</li>
-								<li>FEATURES</li>
-							</ul>
+		<div class="bg-div">
+					<div class="main-slider_left">
+						<a href="#">
+							<div class="left-arrow">
+								<img src="img/arrow_left.ico" alt="arrow_left">
+							</div>
+						</a>
+					</div>
+					
+					<div class="main-slider_right">
+						<a href="#">
+							<div class="right-arrow">
+								<img src="img/arrow_right.ico" alt="arrow_right">
+							</div>
+						</a>
+					</div>
+			<img src="img/main_bg.jpg" alt="main_bg" class="header-bg-image">
+			<div class="grid">
+				<div class="middle-header">
+					<div class="grid">
+						<span class="main-logo">
+							<a href="index.html">
+								<img src="img/logo.png" alt="logo">
+							</a>
+						</span>
+						<ul class="main-menu">
+							<a><li class="main-menu-element HOME selected">HOME <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>Main</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element PORTFOLIO">
+								PORTFOLIO <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>PORTFOLIO</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element BLOG">BLOG <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>BLOGS</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element PAGES">PAGES <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>MAIN</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element SHOP">SHOP <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>SHOP</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element COMPONENTS">COMPONENTS <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>COMPONENTS</li></a>
+								</ul>
+							</li></a>
+							<a><li class="main-menu-element FEATURES">FEATURES <img src="img/arrow_down.ico" alt="arrow_down">
+								<ul class="appearable-window">
+									<a href="index.html"><li>FEATURES</li></a>
+								</ul>
+							</li></a>
+						</ul>
+					<div class="header-icons">
+						<span class="right_border middle-header-icon">
+							<a href="#">
+								<img src="img/search.ico" alt="search">
+							</a>
+						</span>
+						<span class="right_border middle-header-icon">
+							<a href="#">
+								<img src="img/heart.ico" alt="heart-icon">
+							</a>
+						</span>
+						<span class="middle-header-icon">
+							<a href="#">
+								<img src="img/shopping_cart.ico" alt="shopping-cart">
+							</a>
+						</span>
+					</div>
+				</div>
+				</div>
+				<div class="bottom-header">
+						<div class="main-slider_name">
+							<div class="main-blog-flex">
+								<h2>INSPIRATION</h2>
+								<h1>5 WAYS MILLENIALS CAN START BUILDING THEIR FUTURE TODAY</h1>
+								<button href="#" class="read-more_button radius50">READ MORE</button>
+								<span class="blog_author">
+									<a href="#" class="author-icon">
+										<img src="img/photo_copy.jpg" alt="main_man">
+									</a>
+									<a href="#">
+									<p>Henry Little</p>
+									</a>
+									<span class="blog_created">April 28. 2016 10:15</span>
+									</a>
+									<div class="comments-likes">
+										<span class="comments">
+											<a href="#">
+											<img src="img/forum_comments.ico" alt="comments-icon">
+											Comments (28)
+											</a>
+										</span>
+										<span class="likes">
+											<a href="#">
+											<img src="img/heart.ico" alt="heart-icon">
+											Likes (07)
+											</a>
+										</span>
+									</div>
+								</span>
+							</div>
 						</div>
-
-					</div>
-					<div class="bottom-header">
-						
-					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<main>
+		<div class="white-bg">
+			<div class="sort-block grid">
+				<div class="sorts">
+					<span class="bold">
+						SORT-BLOG:
+					</span>
+					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(2)')" class="radius50 selected">ALL</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(3)')" class="radius50">PHOTOGRAPHY</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(4)')" class="radius50">LIFESTYLE</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(5)')" class="radius50">TRIP</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(6)')" class="radius50">INSPIRATION</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div class="content grid">
+			<div class="blogs">
+
+				<div class="blog type-1">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- OT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="blog type-2">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-2">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-2">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-3">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-3">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-3">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-4">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog type-4">
+					<div class="blog-top">
+						<img src="img/man_spine.jpg" alt="man_spine" class="main-img">
+						<span class="tag">LIFESTYLE</span>
+						<div class="comments-likes">
+							<span class='m-r10'>
+								<img src="img/forum_comments.ico" alt="comments"> 7
+							</span>
+							<span>
+								 <img src="img/heart.ico" alt="heart"> 15
+							</span>
+						</div>
+					</div>
+					<div class="blog-bottom">
+						<h3><a href="#">10 Things To Do To Change Your Life Forever</a></h3>
+						<p class="description">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						<div class="author-menu">
+							<a href="#" class="author">
+								<div class="author-icon">
+									<img class="author-img" src="img/photo2.jpg" alt="author-icon">
+								</div>
+							</a>
+							<span>
+								<a href="#">
+									<b>Henry Little</b>
+									<p class='gray'>April 28, 2016 10:15</p>
+								</a>
+							</span>
+							<div class="move-vert">
+								<a href='#'>
+									<img src="img/move_vert.ico" alt="move_vert">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+				<!-- ДО -->
+
+
+
+
+
+
+
+			<!-- Right Panel -->
+			<div class="right-panel">
+				<div class="right-panel_block">
+					<form class="search">
+						<input type="text" name="search"  placeholder="Search">
+						<a class="search-button" onclick="#">
+							<img src="img/search.ico" alt="search-icon">
+						</a>
+					</form>
+				</div>
+				<div class="right-panel_block">
+					<h3>Categories</h3>
+					<ul class="right-panel_list">
+						<li><span class="left">Photography</span><span class='right'>195</span></li>
+						<li><span class="left">Illustration</span><span class="right">15</span></li>
+						<li><span class="left">Graphic Design</span><span class="right">36</span></li>
+						<li><span class="left">Web design</span><span class="right">220</span></li>
+						<li><span class="left">Videography</span><span class="right">17</span></li>
+					</ul>
+				</div>
+				<div class="right-panel_block">
+					<h3>Subscribe</h3>
+					<form class="subscribe">
+						<label>
+							<p>Name</p>
+							<input type="text" placeholder="Igor Ten">
+						</label>
+						<label>
+							<p>Email</p>
+							<input type="text" placeholder="email@address.com">
+						</label>
+						<input class="button-subscribe" type="submit" value="SUBSCRIBE">
+						<fieldset class="social-subcribe">
+							<legend align="center">or</legend>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-vk"></a>
+							<a href="#" class="fa fa-pinterest"></a>
+							<a href="#" class="fa fa-tumblr"></a>
+							<a href="#" class="fa fa-dribbble"></a>
+						</fieldset>
+					</form>
+				</div>
+				<div class="right-panel_block">
+					<h3>Tab post widget</h3>
+					<div class="inputs">
+						<input onclick="changeSelect('.right-panel_block', '.widget_button', ':nth-child(1)')" type="button" value="RECENT POST" class="widget_button selected".>
+						<input onclick="changeSelect('.right-panel_block', '.widget_button', ':nth-child(2)')" type="button" value="POPULAR POST" class="widget_button"/>
+					</div>
+					<div class="widget-blogs">
+						<a class="widget-blog">
+							<div class="image-container img-1">
+								<img src="img/man_looking.jpg" alt="blog-image">
+							</div>
+							<div class="blog-description">
+								<span>April 28, 2016 <span><img src="img/comments-blue.ico" alt="comments">17</span></span>
+								<div class="blog-name">
+									Duis commodo elit sed nisi molestie
+								</div>
+							</div>
+						</a>
+						<a class="widget-blog">
+							<div class="image-container img-2">
+								<img src="img/woman_tongue.jpg" alt="blog-image">
+							</div>
+							<div class="blog-description">
+								<span>April 28, 2016 <span><img src="img/comments-blue.ico" alt="comments">17</span></span>
+								<div class="blog-name">
+									Duis commodo elit sed nisi molestie
+								</div>
+							</div>
+						</a>
+						<a class="widget-blog">
+							<div class="image-container img-3">
+								<img src="img/woman_looking_sea.jpg" alt="blog-image">
+							</div>
+							<div class="blog-description">
+								<span>April 28, 2016 <span><img src="img/comments-blue.ico" alt="comments">17</span></span>
+								<div class="blog-name">
+									Duis commodo elit sed nisi molestie
+								</div>
+							</div>
+						</a>
+						<a class="widget-blog">
+							<div class="image-container img-4">
+								<img src="img/firework.jpg" alt="blog-image">
+							</div>
+							<div class="blog-description">
+								<span>April 28, 2016 <span><img src="img/comments-blue.ico" alt="comments">17</span></span>
+								<div class="blog-name">
+									Duis commodo elit sed nisi molestie
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="right-panel_block">
+					<h3>Tags</h3>
+					<div class="tags">
+						<a href="#">Photography</a>
+						<a href="#">Webdesign</a>
+						<a href="#">Youtube</a>
+						<a href="#">Envato</a>
+						<a href="#">Art</a>
+						<a href="#">Themefotest</a>
+						<a href="#">Illustration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="right-panel_bg"></div>
+	</main>
+
 </body>
 </html>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.corner.js"></script>
+	<script src="js/script.js"></script>
