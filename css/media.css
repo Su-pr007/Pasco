@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 1921px){
+	.type-2 .blog-top{
+		width: 27% !important;
+	}
+}
 @media screen and (max-width: 1400px){
 	.grid{
 		width: 80vw;
