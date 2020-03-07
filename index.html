@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<!-- Header -->
 	<header class="main-header">
-
 		<div class="top-header">
 			<div class="top-header-container grid">
 				<div class="social-links">
@@ -60,44 +60,44 @@
 							</a>
 						</span>
 						<ul class="main-menu">
-							<a><li class="main-menu-element HOME selected">HOME <img src="img/arrow_down.ico" alt="arrow_down">
+							<li class="main-menu-element HOME selected">HOME <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>Main</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element PORTFOLIO">
+							</li>
+							<li class="main-menu-element PORTFOLIO">
 								PORTFOLIO <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>PORTFOLIO</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element BLOG">BLOG <img src="img/arrow_down.ico" alt="arrow_down">
+							</li>
+							<li class="main-menu-element BLOG">BLOG <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
-									<a href="index.html"><li>BLOGS</li></a>
+									<a href="#blogs"><li>BLOGS</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element PAGES">PAGES <img src="img/arrow_down.ico" alt="arrow_down">
+							</li>
+							<li class="main-menu-element PAGES">PAGES <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>SERVICE</li></a>
 									<a href="index.html"><li>FAQ</li></a>
 									<a href="index.html"><li>ABOUT</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element SHOP">SHOP <img src="img/arrow_down.ico" alt="arrow_down">
+							</li>
+							<li class="main-menu-element SHOP">SHOP <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>SHOP</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element COMPONENTS">COMPONENTS <img src="img/arrow_down.ico" alt="arrow_down">
+							</li>
+							<li class="main-menu-element COMPONENTS">COMPONENTS <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>COMPONENTS</li></a>
 								</ul>
-							</li></a>
-							<a><li class="main-menu-element FEATURES">FEATURES <img src="img/arrow_down.ico" alt="arrow_down">
+							</li>
+							<li class="main-menu-element FEATURES">FEATURES <img src="img/arrow_down.ico" alt="arrow_down">
 								<ul class="appearable-window">
 									<a href="index.html"><li>FEATURES</li></a>
 								</ul>
-							</li></a>
+							</li>
 						</ul>
 					<div class="header-icons">
 						<span class="right_border middle-header-icon">
@@ -132,7 +132,6 @@
 									<p>Henry Little</p>
 									</a>
 									<span class="blog_created">April 28. 2016 10:15</span>
-									</a>
 									<div class="comments-likes">
 										<span class="comments">
 											<a href="#">
@@ -154,22 +153,23 @@
 			</div>
 		</div>
 	</header>
+	<!-- Main -->
 	<main class="main-block">
 		<div class="white-bg">
+		<a name="blogs"></a>
 			<div class="sort-block grid">
 				<div class="sorts">
 					<span class="bold">
 						SORT-BLOG:
 					</span>
-					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(2)')" class="radius50 selected">ALL</button>
-					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(3)')" class="radius50">PHOTOGRAPHY</button>
-					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(4)')" class="radius50">LIFESTYLE</button>
-					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(5)')" class="radius50">TRIP</button>
-					<button onclick="changeSelect('.sorts', 'button', 'button:nth-child(6)')" class="radius50">INSPIRATION</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:eq(0)')" class="radius50 selected">ALL</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:eq(1)')" class="radius50">PHOTOGRAPHY</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:eq(2)')" class="radius50">LIFESTYLE</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:eq(3)')" class="radius50">TRIP</button>
+					<button onclick="changeSelect('.sorts', 'button', 'button:eq(4)')" class="radius50">INSPIRATION</button>
 				</div>
 			</div>
 		</div>
-
 		<!-- Content -->
 		<div class="content grid">
 			<div class="blogs">
@@ -178,7 +178,7 @@
 			<div class="right-panel_bg"></div>
 
 				<!-- 1 -->
-				<div class="blog type-1">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/man_spine.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">inspiration</span>
@@ -215,7 +215,7 @@
 					</div>
 				</div>
 				<!-- 2 -->
-				<div class="blog type-2">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/woman_in_hat.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">INSPIRATION</span>
@@ -253,7 +253,7 @@
 				</div>
 
 				<!-- 3 -->
-				<div class="blog type-2">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/skater.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">inspiration</span>
@@ -290,7 +290,7 @@
 					</div>
 				</div>
 				<!-- 4 -->
-				<div class="blog type-2">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/sea.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">inspiration</span>
@@ -327,7 +327,7 @@
 					</div>
 				</div>
 				<!-- 5 -->
-				<div class="blog type-3">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/healthy_food.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">inspiration</span>
@@ -364,7 +364,7 @@
 					</div>
 				</div>
 				<!-- 6 -->
-				<div class="blog type-3">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/woman_in_forest.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">trip</span>
@@ -401,7 +401,7 @@
 					</div>
 				</div>
 				<!-- 7 -->
-				<div class="blog type-3">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/man_in_glasses.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">lifestyle</span>
@@ -438,7 +438,7 @@
 					</div>
 				</div>
 				<!-- 8 -->
-				<div class="blog type-4">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/man_looking_clouds.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">lifestyle</span>
@@ -475,7 +475,7 @@
 					</div>
 				</div>
 				<!-- 9 -->
-				<div class="blog type-4">
+				<div class="blog">
 					<div class="blog-top">
 						<img src="img/woman_writing.jpg" alt="main_blog_image" class="main-img">
 						<span class="tag">inspiration</span>
@@ -565,7 +565,7 @@
 				<div class="right-panel_block">
 					<h3>Tab post widget</h3>
 					<div class="inputs">
-						<input onclick="changeSelect('.right-panel_block', '.widget_button', ':nth-child(1)')" type="button" value="RECENT POST" class="widget_button selected".>
+						<input onclick="changeSelect('.right-panel_block', '.widget_button', ':nth-child(1)')" type="button" value="RECENT POST" class="widget_button selected"/>
 						<input onclick="changeSelect('.right-panel_block', '.widget_button', ':nth-child(2)')" type="button" value="POPULAR POST" class="widget_button"/>
 					</div>
 					<div class="widget-blogs">
@@ -629,14 +629,13 @@
 				</div>
 			</div>
 			<div class="more-container">
-				<a class="more" href="#">More
+				<div class="more">More
 					<div class="image"><img src="img/arrow_forward.ico" alt="more-img"></div>
-				</a>
+				</div>
 			</div>
 		</div>
 	</main>
-
-
+	<!-- Footer -->
 	<footer class="main-footer">
 		<img class="footer-bg" src="img/forest.jpg" alt="footer-bg">
 		<div class="photos">
@@ -658,7 +657,7 @@
 			<div class="widget pages">
 				<span>Pages widget</span>
 				<ul class="menu">
-					<li name="1">
+					<li name="0">
 						<div class='padding'>
 							HOME 
 							<svg width="16" height="16">
@@ -671,7 +670,7 @@
 							<a href="#"><li>menu2</li></a>
 						</ul>
 					</li>
-					<li name="2">
+					<li name="1">
 						<div class='padding'>
 							PAGES
 						 	<svg width="16" height="16">
@@ -685,7 +684,7 @@
 							<a href="#"><li>About</li></a>
 						</ul>
 					</li>
-					<li name="3">
+					<li name="2">
 						<div class='padding'>
 							PORTFOLIO 
 							<svg width="16" height="16">
@@ -698,7 +697,7 @@
 							<a href="#"><li>menu2</li></a>
 						</ul>
 					</li>
-					<li name="4">
+					<li name="3">
 						<div class='padding'>
 							BLOG 
 							<svg width="16" height="16">
@@ -707,12 +706,11 @@
 							</svg>
 						</div>
 						<ul class="inner_menu">
-							<a href="#"><li>menu1</li></a>
-							<a href="#"><li>menu2</li></a>
+							<a href="#blogs"><li>BLOGS</li></a>
 						</ul>
 					</li>
-					<li name="5">
-						<div class='padding' name='one'>
+					<li name="4">
+						<div class='padding'>
 							SHOP 
 						<svg width="16" height="16">
 							<line x1="0" y1="8" x2="16" y2="8" stroke="#666" stroke-width="2"></line>
@@ -735,7 +733,7 @@
 						<div class="twitter-message"> @PASCO, Duis commodo elit sed nisi molestie
 						</div>
 						<div class="options">
-							2 Hours ago → <a href="#">Reply</a>
+							<p>2 Hours ago → </p><a href="#">Reply</a>
 							<a href="#">Retweet</a>
 							<a href="#">Favorite</a>
 						</div>
@@ -746,7 +744,7 @@
 						<div class="twitter-message"> @PASCO, Duis commodo elit sed nisi molestie
 						</div>
 						<div class="options">
-							2 Hours ago → <a href="#">Reply</a>
+							<p>2 Hours ago → </p><a href="#">Reply</a>
 							<a href="#">Retweet</a>
 							<a href="#">Favorite</a>
 						</div>
@@ -757,7 +755,7 @@
 						<div class="twitter-message"> @PASCO, Duis commodo elit sed nisi molestie
 						</div>
 						<div class="options">
-							2 Hours ago → <a href="#">Reply</a>
+							<p>2 Hours ago → </p><a href="#">Reply</a>
 							<a href="#">Retweet</a>
 							<a href="#">Favorite</a>
 						</div>
@@ -778,31 +776,31 @@
 				<div class="flickr-photos">
 					<a href="#" class="img-container">
 						<img src="img/woman_looking_sea.jpg" alt="flickrimg1">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/woman_looking.jpg" alt="flickrimg2">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/man_bread.jpg" alt="flickrimg3">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/man_pictrs_on_wall.jpg" alt="flickrimg4">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/pancakes.jpg" alt="flickrimg5">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/tech.jpg" alt="flickrimg6">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/keyboard.jpg" alt="flickrimg7">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/legs.jpg" alt="flickrimg8">
-					</a href="#">
+					</a>
 					<a href="#" class="img-container">
 						<img src="img/woman_wheat.jpg" alt="flickrimg9">
-					</a href="#">
+					</a>
 				</div>
 			</div>
 			<div class="widget news">
@@ -816,7 +814,7 @@
 			</div>
 		</div>
 	</footer>
-</body>
-</html>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/script.js"></script>
+</body>
+</html>

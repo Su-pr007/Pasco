@@ -1,6 +1,9 @@
-@media screen and (max-width: 1921px){
+@media screen and (min-width: 1900px){
+	.main-footer .footer-bg{
+		top: -70%;
+	}
 	.type-2 .blog-top{
-		width: 27% !important;
+		width: 27%;
 	}
 }
 @media screen and (max-width: 1400px){
@@ -11,8 +14,11 @@
 		grid-template-columns: 10vw 1fr 10vw;
 	}
 	.sort-block{
-		height: 40px;
+		height: 2.5em;
 		width: 80%;
+	}
+	.right-panel_bg{
+		top: 70px;
 	}
 	.main-slider_left, .main-slider_right{
 		width: 8vw;
@@ -28,9 +34,86 @@
 	.bottom-header{
 		grid-template-columns: 5vw 1fr 5vw;
 	}
+	.main-blog-flex h2{
+		margin-top: 5%;
+	}
+	.middle-header{
+		z-index: 2;
+	}
+
 }
 @media screen and (max-width: 1110px){
 	.grid{
-		width: 100vw;
+		width: 95vw;
 	}
+	.main-blog-flex h2{
+		margin-top: 3%;
+	}
+}
+@media screen and (max-width: 1100px){
+	.middle-header .grid{
+		display: flex;
+	}
+	.middle-header .grid .main-menu{
+		margin: auto;
+	}
+	.main-logo{
+		width: min-content;
+	}
+	.middle-header .main-menu-element{
+		margin-right: 0;
+		padding: 25px 0 20px 10px;
+	}
+	.main-blog-flex h2{
+		margin-top: 1%;
+	}
+	.main-blog-flex h1{
+		font-size: 2em;
+	}
+	.blogs .type-3{
+		width: calc(33% - 12px);
+	}
+	.blog .blog-bottom .author-menu{
+		flex-flow: row wrap;
+	}
+	.type-3 .blog-bottom .author-menu .author{
+		margin: auto;
+	}
+	.blog .blog-bottom .author-menu .p-t0{
+		padding-top: 1em !important;
+	}
+	.blog .blog-bottom .author-menu .move-vert{
+		top: 75%;
+		transform: translateY(-100%);
+	}
+	.main-footer .twitter .options{
+		flex-flow: row wrap;
+	}
+	.main-footer .twitter .options p{
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.main-footer .twitter .options a{
+		width: max-content;
+	}
+	.social-subcribe a.fa{
+		height: 25px;
+		width: 25px;
+	}
+	.social-subcribe a.fa::before{
+		font-size: 0.9em;
+	}
+	.main-footer .footer-bg{
+		top: -13em;
+	}
+	.main-footer .news .submInput:hover{
+		background-color: #303F9F;
+	}
+	.right-panel .widget-blogs .widget-blog .blog-description>span{
+		font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 920px){
+	
 }
