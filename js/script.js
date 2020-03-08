@@ -31,8 +31,9 @@ function init(){
 		}
 		$('.type-3').last().addClass('m-r0');
 		$('.type-4').last().addClass('m-r0');
+		resizeImg('.widget.flickr .img-container');
 		$('.main-footer .photos').height($('.main-footer .photos img').height());
-		$('.subscribe-field .mail, .subscribe-field .blue-button').height($('.subscribe-field>span').height()-34);
+		$('.subscribe-field .blue-button').height($('.subscribe-field .mail').height());
 		$('.subscribe-field .mail').width($('.subscribe-field').width()-$('.subscribe-field .blue-button').width()-$('.subscribe-field>span').width()-150);
 		$('.type-2 .blog-top').width($('.type-2 .blog-top').first().width())
 		$('.type-2 .blog-bottom').width($('.type-2').width()-$('.type-2 .blog-top').width());
@@ -44,16 +45,14 @@ function init(){
 		$('.blogs .type-3 .blog-top').height(a.sort().shift());
 		a=undefined;
 		$('.type-4 .blog-top').height($('.type-4 .blog-top img').height());
-		resizeImg('.widget.flickr .img-container');
-		$('.main-footer .twitter .twitter-message').width($('.main-footer .twitter .twitter-message').width()-$('.main-footer .twitter-icon').width()-20);
+		$('.main-footer .twitter .twitter-message').width($('.main-footer .twitter li').width()-$('.main-footer .twitter-icon').width()-20);
 		$('.widget.flickr .img-container').height($('.widget.flickr .img-container').width());
 		return true
 	}
 	else{
-		
+
 	}
 }
-
 function resizeImg(imgContainer){
 	for(let i=0; i<$(imgContainer).length; i++){
 		if($(imgContainer+':eq('+i+') img').height()>$(imgContainer+':eq('+i+') img').width()){
@@ -88,5 +87,5 @@ $('.menu>li').click((qq)=>{
 	}
 });
 window.addEventListener('resize', ()=>{
-	setTimeout(init, 400)
+	setTimeout(init, 200)
 }, false);
