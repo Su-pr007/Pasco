@@ -3,8 +3,6 @@
 
 $(document).ready(init);
 function init(){
-	if($(window).width()>920){
-
 		let blogs=$('.blog');
 		for(let i = 0; i<blogs.length; i++){
 			switch(i%9){
@@ -47,21 +45,26 @@ function init(){
 		$('.type-4 .blog-top').height($('.type-4 .blog-top img').height());
 		$('.main-footer .twitter .twitter-message').width($('.main-footer .twitter li').width()-$('.main-footer .twitter-icon').width()-20);
 		$('.widget.flickr .img-container').height($('.widget.flickr .img-container').width());
-		return true
-	}
-	else{
+		
+	if($(window).width()<920){
 		let tags = ['All', 'Photography', 'Lifestyle', 'Trip', 'Inspiration'];
-		if(!document.querySelector('.burger-button')){
-			$('.middle-header .main-menu').prepend('<div class="burger-button"><div class="burger-line"></div></div>');
-		}
+		if(!document.querySelector('.burger-button')) $('.middle-header .main-menu').prepend('<div class="burger-button"><div class="burger-line"></div></div>');
 		$('.top-header .right_border').removeClass('right_border');
 		$('.sorts').html('');
 		$('.sorts').append('<select class="sort"></select>');
 		$('.sorts .sort').append('<option>Sort blog</option>')
 		for(let i of tags) $('.sorts .sort').append('<option>'+i+'</option>');
-		scrollTo(pageYOffset, 50);
+		let flickr_imgs = $('.widget.flickr .img-container').toArray();
+		for(let i = 0; i<5; i++) flickr_imgs.sort((a, b)=>{
+			return Math.random()-0.5;
+		}).pop().remove();
+		$('.main-footer .widget.pages').parent().prepend('<div class="widget"><span>Pasco</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, libero. Quasi facilis sapiente impedit, officia praesentium aliquid nulla. Odit quos ipsa, praesentium expedita ipsum rem repellat deleniti voluptatibus illo tempora?</p></div>');
+		$('.main-footer .bottom-footer').append('<div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-vk"></a><a href="#" class="fa fa-pinterest"></a><a href="#" class="fa fa-tumblr"></a><a href="#" class="fa fa-dribbble"></a></div>').append('<p><span class="right_border">© 2016 PASCO</span><span>All Rights Reserved</span></p>');
+		// scrollTo(pageYOffset, 50);
 	}
 }
+
+// Заполняет контейнер изображением единственным оптимальным способом до которого я додумался
 function resizeImg(imgContainer){
 	for(let i=0; i<$(imgContainer).length; i++){
 		if($(imgContainer+':eq('+i+') img').height()>$(imgContainer+':eq('+i+') img').width()){
@@ -95,6 +98,9 @@ $('.menu>li').click((qq)=>{
 		$('.menu>li:eq('+number+') svg line:nth-child(2)').hide();
 	}
 });
+
+
+// Переназначить все высоты и ширины при изменении размера окна
 window.addEventListener('resize', ()=>{
 	setTimeout(init, 200)
 }, false);

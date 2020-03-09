@@ -956,7 +956,7 @@ li .left{
 	overflow: hidden;
 	margin: 0 5px 10px 5px;
 }
-.main-footer .widget.flickr .img-container:first-of-type img{
+.main-footer .widget.flickr .img-container img[src="img/woman_looking_sea.jpg"]{
 	transform: translateX(-25%);
 }
 .main-footer .widget.news input, .main-footer .widget.news textarea{
