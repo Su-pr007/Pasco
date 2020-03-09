@@ -50,7 +50,16 @@ function init(){
 		return true
 	}
 	else{
-
+		let tags = ['All', 'Photography', 'Lifestyle', 'Trip', 'Inspiration'];
+		if(!document.querySelector('.burger-button')){
+			$('.middle-header .main-menu').prepend('<div class="burger-button"><div class="burger-line"></div></div>');
+		}
+		$('.top-header .right_border').removeClass('right_border');
+		$('.sorts').html('');
+		$('.sorts').append('<select class="sort"></select>');
+		$('.sorts .sort').append('<option>Sort blog</option>')
+		for(let i of tags) $('.sorts .sort').append('<option>'+i+'</option>');
+		scrollTo(pageYOffset, 50);
 	}
 }
 function resizeImg(imgContainer){
