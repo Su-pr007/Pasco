@@ -338,6 +338,7 @@ main{
 	display: -o-flex;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-around;
 }
 .blog{
 	background-color: #fff;
@@ -438,9 +439,6 @@ main{
 	margin-right: 20px;
 	flex-flow: column wrap;
 }
-.type-2 .blog-top img{
-	width: initial !important;
-}
 .blogs .type-2 .blog-top::before{
 	bottom: 0;
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0, transparent 38%);
@@ -448,10 +446,6 @@ main{
 }
 .blogs .type-2 .blog-bottom{
 	width: 62%;
-}
-.blogs .type-2 .blog-bottom .author-menu{
-	padding: 1em;
-	padding-bottom: 0;
 }
 .blogs .type-2 .blog-bottom h3{
 	margin-bottom:0;
