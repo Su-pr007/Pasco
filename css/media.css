@@ -133,6 +133,9 @@
 	}
 }
 @media screen and (max-width: 950px){
+	.grid{
+		width: 90vw;
+	}
 	.grid, .middle-header .main-menu, .middle-header .main-menu:hover .main-menu-element{
 		display: block;
 	}
@@ -361,8 +364,21 @@
 		list-style: none;
 		margin: 10px;
 	}
+	.main-footer .categories li:last-of-type{
+		border: none;
+	}
 	li .left{
 		float: none;
+	}
+	.main-footer h3{
+		color: #fff;
+		border: none;
+	}
+	.main-footer .tags a{
+		background-color: transparent;
+		color: #bbb;
+		border: 1px solid #fff;
+		padding: 4px 20px;
 	}
 }
 @media screen and (max-width: 600px){
@@ -383,5 +399,5 @@
 	.blogs .blog .blog-top{
 		font-size: 1.3em;
 	}
-
+	
 }
