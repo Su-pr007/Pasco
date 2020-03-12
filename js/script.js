@@ -1,6 +1,4 @@
 'use strict'
-
-
 $(document).ready(init);
 function init(){
 	$('.blog').removeClass('type-1').removeClass('type-2').removeClass('type-3').removeClass('type-4').removeClass('type-5');
@@ -68,7 +66,6 @@ function init(){
 		$('.main-footer .widget.pages').parent().prepend('<div class="widget pasco"><h3>Pasco</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, libero. Quasi facilis sapiente impedit, officia praesentium aliquid nulla. Odit quos ipsa, praesentium expedita ipsum rem repellat deleniti voluptatibus illo tempora?</p></div>');
 		$('.main-footer .bottom-footer').append('<div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-vk"></a><a href="#" class="fa fa-pinterest"></a><a href="#" class="fa fa-tumblr"></a><a href="#" class="fa fa-dribbble"></a></div>').append('<p><span class="right_border">© 2016 PASCO</span><span>All Rights Reserved</span></p>');
 		$('.top-header .login-span').removeClass('login-span');
-
 		let blogs=$('.blog');
 		for(let i = 0; i<blogs.length; i++){
 			switch(i){
@@ -98,7 +95,6 @@ function init(){
 		scrollTo(pageYOffset, 60);
 	}
 }
-
 function resizeImg(imgContainer){
 	for(let i=0; i<$(imgContainer).length; i++){
 		if($(imgContainer+':eq('+i+') img').height()>$(imgContainer+':eq('+i+') img').width()){
@@ -109,7 +105,6 @@ function resizeImg(imgContainer){
 		}
 	}
 }
-
 // Визуальная смена выбранного элемента
 function changeSelect(path, block, selTo){
 	$(path+' '+block).removeClass('selected');
@@ -132,10 +127,7 @@ $('.menu>li').click((qq)=>{
 		$('.menu>li:eq('+number+') svg line:nth-child(2)').hide();
 	}
 });
-
-
 // Переназначить все высоты и ширины при изменении размера окна
 window.addEventListener('resize', ()=>{
-	console.log('1');
 	setTimeout(init, 200)
 }, false);

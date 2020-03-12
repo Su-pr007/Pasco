@@ -97,11 +97,11 @@
 	.main-footer .twitter .options a{
 		width: max-content;
 	}
-	.social-subcribe a.fa{
+	.social-subscribe a.fa{
 		height: 25px;
 		width: 25px;
 	}
-	.social-subcribe a.fa::before{
+	.social-subscribe a.fa::before{
 		font-size: 0.9em;
 	}
 	.main-footer .footer-bg{
@@ -130,6 +130,9 @@
 	}
 	.categories li:hover{
 		background-color: #f5f5f5;
+	}
+	.main-footer .widget.news .submInput:hover{
+		background-color: #303F9F;
 	}
 }
 @media screen and (max-width: 950px){
@@ -193,7 +196,7 @@
 	.appearable-window li{
 		background-color: transparent;
 	}
-	.top-header .social-links, .bg-div .header-bg-image, .main-slider_left, .main-slider_right, .right-panel, .footer-bg, .photos, .more-container, .right-panel_bg, .bottom-header, .header-icons .right_border, .bg-div::before, .widget.news, .widget.social-subcribe, .widget.twitter, .subscribe-field, .widget.pages{
+	.top-header .social-links, .bg-div .header-bg-image, .main-slider_left, .main-slider_right, .right-panel, .footer-bg, .photos, .more-container, .right-panel_bg, .bottom-header, .header-icons .right_border, .bg-div::before, .widget.news, .widget.social-subscribe, .widget.twitter, .subscribe-field, .widget.pages{
 		display: none !important;
 	}
 	.main-menu .main-menu-element{
