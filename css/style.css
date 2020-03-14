@@ -457,7 +457,7 @@ main{
 	margin-top: 1em;
 }
 .blogs .type-3{
-	width: calc(33% - 11px);
+	width: calc(33% - 18px);
 }
 .blogs .type-3 .blog-top{
 	width: 100%;
@@ -953,6 +953,7 @@ li .left{
 	display: -o-flex;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 }
 .main-footer .widget.flickr .img-container{
 	width: calc(100% / 3 - 15px);

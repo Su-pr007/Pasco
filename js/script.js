@@ -31,7 +31,14 @@ function init(){
 				default:
 					continue;
 			}
+			if(i>=9){
+				blogs[i].style.display='none';
+			}
 		}
+		$('.more-container').click(()=>{
+			$('.blogs .blog').css('display', 'flex');
+			$('.more-container').hide();
+		});
 		$('.type-3').last().addClass('m-r0');
 		$('.type-4').last().addClass('m-r0');
 		$('.subscribe-field .blue-button').height($('.subscribe-field .mail').height());
@@ -39,11 +46,13 @@ function init(){
 		$('.type-2 .blog-top').width($('.type-2 .blog-top').first().width())
 		$('.type-2 .blog-bottom').width($('.type-2').width()-$('.type-2 .blog-top').width());
 		$('.right-panel_bg').width($('body').width()-$('.right-panel').offset().left+40);
+
 		let a=[];
-		$('.blogs .type-3 .blog-top').toArray().forEach((e)=>{  
+		$('.blogs .type-3:eq(1) .blog-top').toArray().forEach((e)=>{  
 			a.push(e["offsetHeight"]);
 		});
-		$('.blogs .type-3 .blog-top').height(a.sort().shift());
+		$('.blogs .type-3 .blog-top').height(a.slice(0, 3).sort().shift());
+
 		$('.type-4 .blog-top').height($('.type-4 .blog-top img').height());
 		$('.main-footer .twitter .twitter-message').width($('.main-footer .twitter li').width()-$('.main-footer .twitter-icon').width()-20);
 	}
@@ -63,7 +72,7 @@ function init(){
 		}
 		$('.main-footer .widget.pages').parent().prepend($('.right-panel .tags').parent());
 		$('.main-footer .widget.pages').parent().prepend($('.right-panel .categories'));
-		$('.main-footer .widget.pages').parent().prepend('<div class="widget pasco"><h3>Pasco</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, libero. Quasi facilis sapiente impedit, officia praesentium aliquid nulla. Odit quos ipsa, praesentium expedita ipsum rem repellat deleniti voluptatibus illo tempora?</p></div>');
+		$('.main-footer .widget.pages').parent().prepend('<div class="widget pasco"><h3>Pasco</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, libero. Quasi facilis sapiente impedit, officia praesentium aliquid nulla. Odit quos ipsa, praesentium expedita ipsum rem repellat deleniti voluptatibus illo tempora?</p><button class="radius50">READ MORE</button></div>');
 		$('.main-footer .bottom-footer').append('<div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-vk"></a><a href="#" class="fa fa-pinterest"></a><a href="#" class="fa fa-tumblr"></a><a href="#" class="fa fa-dribbble"></a></div>').append('<p><span class="right_border">© 2016 PASCO</span><span>All Rights Reserved</span></p>');
 		$('.top-header .login-span').removeClass('login-span');
 		let blogs=$('.blog');
@@ -87,7 +96,6 @@ function init(){
 				case 5:
 					blogs[i].classList.add('type-3');
 					break;
-
 				default:
 					continue;
 			}
@@ -127,7 +135,3 @@ $('.menu>li').click((qq)=>{
 		$('.menu>li:eq('+number+') svg line:nth-child(2)').hide();
 	}
 });
-// Переназначить все высоты и ширины при изменении размера окна
-window.addEventListener('resize', ()=>{
-	setTimeout(init, 200)
-}, false);

@@ -134,6 +134,12 @@
 	.main-footer .widget.news .submInput:hover{
 		background-color: #303F9F;
 	}
+	.middle-header .main-menu-element:hover img[alt="arrow_down"]{
+		transform: rotateX(180deg);
+	}
+	.lang-block:hover img[alt='arrow_down']{
+		transform: rotateX(180deg);
+	}
 }
 @media screen and (max-width: 950px){
 	.grid{
@@ -141,12 +147,6 @@
 	}
 	.grid, .middle-header .main-menu, .middle-header .main-menu:hover .main-menu-element{
 		display: block;
-	}
-	.middle-header .main-menu-element:hover img[alt="arrow_down"]{
-		transform: rotateX(180deg);
-	}
-	.lang-block:hover img[alt='arrow_down']{
-		transform: rotateX(180deg);
 	}
 	.top-header{
 		height: auto;
@@ -283,7 +283,8 @@
 	}
 	.main-footer .widget.flickr .img-container{
 		width: calc(100% / 2 - 20px);
-		margin: 0 20px 20px 0px;
+		margin: 0;
+		margin-bottom: 1em;
 	}
 	.bottom-footer .social-links{
 		display: flex;
@@ -383,6 +384,18 @@
 		border: 1px solid #fff;
 		padding: 4px 20px;
 	}
+	.main-footer .pasco .radius50{
+		background-color: #303030;
+		border: none;
+		padding: 0.6em 2em;
+		color: #fff;
+	}
+}
+@media screen and (max-width: 700px){
+	.blogs .blog .blog-top{
+		font-size: 1.3em;
+	}
+	
 }
 @media screen and (max-width: 600px){
 	.blogs .type-2 .blog-top{
@@ -397,10 +410,4 @@
 	.blog .blog-top::before{
 		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0, transparent 50%);
 	}
-}
-@media screen and (max-width: 700px){
-	.blogs .blog .blog-top{
-		font-size: 1.3em;
-	}
-	
 }
