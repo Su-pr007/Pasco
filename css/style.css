@@ -5,6 +5,9 @@ body{
 	margin: 0;
 	font-family: calibri, sans-serif, arial;
 }
+button, input, textarea{
+	outline: none;
+}
 .grid{
 	width: 75vw;
 	margin: auto;
@@ -169,7 +172,7 @@ a{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-left: 0;
 	margin: 0;
 }
@@ -705,6 +708,7 @@ li .left{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	font-size: 80%;
 }
 .widget-blogs .widget-blog .blog-name{
 	font-weight: bold;
