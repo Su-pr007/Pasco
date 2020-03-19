@@ -3,7 +3,7 @@
 }
 body{
 	margin: 0;
-	font-family: calibri;
+	font-family: calibri, sans-serif, arial;
 }
 .grid{
 	width: 75vw;
@@ -47,7 +47,6 @@ a{
 	padding-bottom: 0.8em;
 	background-color: #191919;
 	color: #8C8C8C;
-	font-family: calibri;
 }
 .top-header img{
 	opacity: 0.38;
@@ -158,7 +157,6 @@ a{
 	position: absolute;
 	top: 0;
 	color: #fff;
-	font-family: calibri;
 }
 .main-logo{
 	grid-column: 1/3;
@@ -797,12 +795,11 @@ li .left{
 	padding: 0.4em 1em;
 	margin: 0;
 	resize: none;
-	font-family: calibri;
 	font-size: 1rem;
 }
 .main-footer input::placeholder, .main-footer textarea::placeholder{
 	color: #ccc;
-	font-family: calibri;
+	font-family: calibri, sans-serif, arial;
 	font-size: 1rem;
 }
 .main-footer .subscribe-field{
