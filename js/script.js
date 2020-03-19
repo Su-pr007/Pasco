@@ -46,6 +46,7 @@ function init(){
 		$('.subscribe-field .mail').width($('.subscribe-field').width()-$('.subscribe-field .blue-button').width()-$('.subscribe-field>span').width()-150);
 		$('.type-2 .blog-top').width($('.type-2 .blog-top').first().width())
 		$('.type-2 .blog-bottom').width($('.type-2').width()-$('.type-2 .blog-top').width());
+		$('.right-panel_bg').css('top', $('.sort-block').height()+30);
 		$('.right-panel_bg').width($('body').width()-$('.right-panel').offset().left+40);
 
 		let a=[];

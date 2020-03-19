@@ -10,7 +10,7 @@ body{
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 2em;
+	grid-column-gap: 1.4em;
 }
 a{
 	text-decoration: none;
@@ -190,6 +190,7 @@ a{
 	display: none;
 	top: 4em;
 	left: 0;
+	width: calc(100% + 14px);
 }
 .middle-header .main-menu-element .appearable-window li{
 	padding: 5px;
