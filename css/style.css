@@ -341,7 +341,7 @@ main{
 	display: -o-flex;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .blog{
 	background-color: #fff;
@@ -355,7 +355,7 @@ main{
 	overflow: hidden;
 }
 
-/* Оверлей картинок блогов */
+/* blog-top overlay */
 
 .blog .blog-top::before{
 	content: '';
@@ -441,7 +441,6 @@ main{
 	flex-flow: row wrap;
 }
 .blog.type-3, .blog.type-4{
-	margin-right: 20px;
 	flex-flow: column wrap;
 }
 .blogs .type-2 .blog-top::before{
@@ -597,8 +596,9 @@ li .left{
 	justify-content: space-between;
 	flex-flow: row wrap;
 }
-.right-panel form fieldset legend{
+.right-panel form fieldset .margin_auto{
 	padding: 0 7px;
+	margin: auto;
 }
 .social-subscribe a.fa{
 	color: #fff;

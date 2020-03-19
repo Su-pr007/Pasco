@@ -3,6 +3,7 @@ $(document).ready(init);
 function init(){
 	$('.blog').removeClass('type-1').removeClass('type-2').removeClass('type-3').removeClass('type-4').removeClass('type-5');
 	resizeImg('.widget.flickr .img-container');
+	$('.main-footer .photos img').height($('.main-footer .photos img').width());
 	$('.main-footer .photos').height($('.main-footer .photos img').height());
 	$('.widget.flickr .img-container').height($('.widget.flickr .img-container').width());
 	if($(window).width()>=920){
@@ -130,8 +131,7 @@ $('.menu>li').click((qq)=>{
 		$('.pages .menu>li .inner_menu').hide();
 		$('.menu>li .padding').css('borderBottom', 'none');
 		$('.menu>li:eq('+number+') .padding').css('borderBottom', '1px solid #999');
-		$('.menu>li:eq('+number+') .inner_menu').show();
-		$('.menu>li svg line').show();
+		$('.menu>li:eq('+number+') .inner_menu, .menu>li svg line').show();
 		$('.menu>li:eq('+number+') svg line:nth-child(2)').hide();
 	}
 });

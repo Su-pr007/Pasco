@@ -124,9 +124,9 @@
 		padding-bottom: 0;
 	}
 
-	/* ----------- Динамика ------------------ */
+	/* ----------- Dynamic ------------------ */
 	.author-icon:hover img, .blog-top:hover .main-img, .main-footer .widget.flickr .img-container img:hover, .image-container:hover img{
-		scale: 1.1;
+		transform: scale(1.1);
 	}
 	.categories li:hover{
 		background-color: #f5f5f5;
@@ -134,10 +134,7 @@
 	.main-footer .widget.news .submInput:hover{
 		background-color: #303F9F;
 	}
-	.middle-header .main-menu-element:hover img[alt="arrow_down"]{
-		transform: rotateX(180deg);
-	}
-	.lang-block:hover img[alt='arrow_down']{
+	.middle-header .main-menu-element:hover img[alt="arrow_down"], .lang-block:hover img[alt='arrow_down']{
 		transform: rotateX(180deg);
 	}
 }
